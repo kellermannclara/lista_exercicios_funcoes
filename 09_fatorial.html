@@ -9,7 +9,22 @@
 
     //PROCESSAMENTO
 
+    function calcularFatorial(n) {
+        let resultado = 1;
+
+        for (let i = 1; i <= n; i++) {
+            resultado = resultado * i;
+        }
+
+        return resultado;
+    }
+
+    let numero = Number(prompt("Digite um número inteiro para calcular o fatorial:"));
+
+    let fatorial = calcularFatorial(numero);
 
     //SAÍDA
+
+    alert(`O fatorial de ${numero} é: ${fatorial}`);
 
 </script>

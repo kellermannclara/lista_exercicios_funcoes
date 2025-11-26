@@ -12,7 +12,21 @@
 
     //PROCESSAMENTO
 
+    function calcularArea(raio) {
+        return Math.PI * raio * raio;
+    }
+
+    function calcularPerimetro(raio) {
+        return 2 * Math.PI * raio;
+    }
+
+    let r = Number(prompt("Digite o raio do círculo:"));
+
+    let area = calcularArea(r);
+    let perimetro = calcularPerimetro(r);
 
     //SAÍDA
+
+    alert(`Área: ${area.toFixed(2)} Perímetro: ${perimetro.toFixed(2)}`);
 
 </script>

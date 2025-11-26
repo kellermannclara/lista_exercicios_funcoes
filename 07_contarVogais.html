@@ -11,7 +11,24 @@
 
     //PROCESSAMENTO
 
+    function contarVogais(texto) {
+        let vogais = "aeiouAEIOU";
+        let contador = 0;
+
+        for (let i = 0; i < texto.length; i++) {
+            if (vogais.includes(texto[i])) {
+                contador++;
+            }
+        }
+        return contador;
+    }
+
+    let palavra = prompt("Digite uma palavra:");
+
+    let totalVogais = contarVogais(palavra);
 
     //SAÍDA
+
+    alert(`A palavra ${palavra} possui ${totalVogais} vogais.`);
 
 </script>

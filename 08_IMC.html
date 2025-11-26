@@ -7,14 +7,19 @@
 
     //ENTRADA
 
-    let altura = Number(prompt(`Informe sua altura`));
-    let peso = Number(prompt(`Informe seu peso`));
-
     //PROCESSAMENTO
 
+    function calcularIMC(peso, altura) {
+        let imc = peso / (altura * altura);
+        return `Seu IMC é ${imc.toFixed(2)}`;
+    }
+
+    let peso = Number(prompt("Digite seu peso (kg):"));
+
+    let altura = Number(prompt("Digite sua altura (m):"));
 
     //SAÍDA
 
-    alert
+    alert(calcularIMC(peso, altura));
 
 </script>
