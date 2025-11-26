@@ -10,7 +10,17 @@
 
     //PROCESSAMENTO
 
+    function coisoFahrenheit(celsius) {
+        let fahrenheit = (9 * celsius + 160) / 5;
+        return fahrenheit;
+    }
+
+    let coisa = Number(prompt("Digite a temperatura em °C:"));
+
+    let f = converterParaFahrenheit(c);
 
     //SAÍDA
+
+    alert(coisa + "°C equivalem a " + f + "°F");
 
 </script>
