@@ -1,35 +1,35 @@
 <script>
-   /*
-   PROBLEMA: CALCULAR CUBO DE UM NÚMERO
-   Peça para o usuário informar um número inteiro.
-   Desenvolva um programa que contenha uma função que calcule o cubo desse número. Apresente o resultado para o usuário.
-   */
+    /*
+    PROBLEMA: CALCULAR CUBO DE UM NÚMERO
+    Peça para o usuário informar um número inteiro.
+    Desenvolva um programa que contenha uma função que calcule o cubo desse número. Apresente o resultado para o usuário.
+    */
 
 
-   //ENTRADA
+    //ENTRADA
 
-   //PROCESSAMENTO
+    //PROCESSAMENTO
 
-
-   let numero = prompt(`Informe um número inteiro`)
-   if (numero != Number.isInteger(numero)) {
-
-
-       function cubo(elevar) {
-           return((elevar * elevar) * elevar)
-       }
-   } else {
-       alert(`Não é um número inteiro`)
-   }
-  
-   let coisa = cubo(numero)
-  
+    let numero = prompt(`Informe um número inteiro`)
+    
+    if (numero != Number.isInteger(numero)) {
 
 
-   //SAÍDA
+        function cubo(elevar) {
+            return ((elevar * elevar) * elevar)
+        }
+    } else {
+        alert(`Não é um número inteiro`)
+    }
+
+    let coisa = cubo(numero)
 
 
-   alert(`O cubo de ${numero} é ${coisa}`)
+
+    //SAÍDA
+
+
+    alert(`O cubo de ${numero} é ${coisa}`)
 
 
 </script>

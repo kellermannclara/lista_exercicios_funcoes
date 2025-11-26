@@ -9,6 +9,29 @@
 
     //PROCESSAMENTO
 
+    function Primo(numero) {
+        if (numero < 2) {
+            return `O número ${numero} NÃO é primo`;
+        }
+
+
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i === 0) {
+                return `O número ${numero} NÃO é primo`;
+            }
+        }
+
+
+        return `O número ${numero} é primo`;
+    }
+
+
+    let num = Number(prompt("Digite um número:"));
+
+
+
+    alert(Primo(num));
+
 
     //SAÍDA
 

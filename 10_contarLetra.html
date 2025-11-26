@@ -7,10 +7,30 @@
 
     //ENTRADA
 
+    let palavra = prompt(`Insire um nome ou frase`).toLocaleLowerCase();
 
     //PROCESSAMENTO
 
+    let letra = "";
+    do {
+        letra = prompt(`Insirá uma letra`);
+    } while (letra.length != 1);
 
+    function contarLetras(valor, naosei) {
+        let edeutraude = Array.from(valor)
+        let contar = 0;
+
+        for (let letra of edeutraude) {
+            if (letra == naosei) {
+                contar++
+            }
+        }
+
+        return(`Existem ${contar} letras ${naosei} nesta palavra`);
+    }
+
+
+    let saida = 
     //SAÍDA
 
 </script>
